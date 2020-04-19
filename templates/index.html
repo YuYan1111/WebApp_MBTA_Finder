@@ -5,6 +5,17 @@
     <title>Amazing app to help you find nearest MBTA station</title>
 </head>
 <body>
+    <h1>Welcome to MBTA Finder</h1>
+    <h2>Please Enter Your Prefer Destination:</h2>
 
+    <form method="Post" name="FindStation">
+      {% if erro %}
+      <p>Erro! Please pick a new place.</p>
+      {% endif %}
+      <p>
+        <label>Enter Location:</label><br>
+        <input type="text" size="40" name="place"/></p>
+        <input type="submit" value="Click for result">
+    </form>
 </body>
 </html>

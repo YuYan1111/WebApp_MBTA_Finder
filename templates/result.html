@@ -1,0 +1,9 @@
+<h1>Check this out!</h1>
+<br> The nearest MBTA station from your current location is here:</h3>
+    <p>Station Name:</b> {{ station_name }}</p>
+
+{% if wheelchair %}
+    <p><b>Disabled People friendly freature:</b> {{ wheelchair_boarding }}</p>
+    {% endif %}
+    
+    <a href="{{ url_for('index')  }}">Click to return Home Page</a>
